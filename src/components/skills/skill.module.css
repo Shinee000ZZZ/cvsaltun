@@ -1,0 +1,44 @@
+/* src/components/skills/skill.module.css */
+.skillContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skillBar {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.skillInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skillProgress {
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+}
+
+.skillLevel {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.skillLevelVisible {
+    background-color: #305fcc;
+    transition: width 1s ease-in-out; /* Transition in slower */
+}
+
+.skillLevelHidden {
+    background-color: #305fcc;
+    transition: width 0.5s ease-in-out; /* Transition out faster */
+}

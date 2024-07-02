@@ -1,0 +1,56 @@
+/* src/components/education/edu.module.css */
+.eduContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px; /* Optional: To add some space below the cards */
+}
+
+.eduCard {
+    flex: 0 0 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #323232;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.eduCard:hover {
+    transform: scale(1.05); /* Scale the card on hover */
+}
+
+.eduImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.schoolName {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.year {
+    font-size: 1em;
+    color: #8e8e8e;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 1em;
+    margin-top: 5px;
+}
