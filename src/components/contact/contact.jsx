@@ -43,16 +43,16 @@ const Contact = () => {
             <footer className={styles.footer}>
                 <div className={styles.socialSection}>
                     <div className={styles.socialIcons}>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/OkeShinee" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
-                        <a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/+6289502632801" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faWhatsapp} />
                         </a>
-                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://tiktok.com/@oshitergantungfyp" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faTiktok} />
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://instagram.com/kesaltunan" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </div>
