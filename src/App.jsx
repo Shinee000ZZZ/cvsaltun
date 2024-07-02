@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './App.css';
-import Hero from './components/hero/hero';
-import Edu from './components/education/edu';
-import Skill from './components/skills/skill';
-import Contact from './components/contact/contact';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./App.css";
+import Hero from "./components/hero/hero";
+import Edu from "./components/education/edu";
+import Skill from "./components/skills/skill";
+import Contact from "./components/contact/contact";
 
 const App = () => {
   useEffect(() => {
@@ -15,12 +15,22 @@ const App = () => {
   return (
     <div className="App">
       <nav className="navbar">
-        <div className="navbar-logo">ONLINE CV</div>
-        <ul className="navbar-links" data-aos="fade-down">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#edu">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <div className="navbar-logo" data-aos="fade-right" data-aos-delay="200">ONLINE CV</div>
+        <ul className="navbar-links" data-aos="fade-up">
+          <ul className="navbar-links">
+            <li data-aos="fade-up" data-aos-delay="200">
+              <a href="#home">Home</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <a href="#edu">Education</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="600">
+              <a href="#skills">Skills</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="800">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </ul>
       </nav>
       <div className="content">
@@ -28,7 +38,7 @@ const App = () => {
         <Edu />
         <Skill />
         <section id="contact">
-          <h1 className='judul'>Contact Me</h1>
+          <h1 className="judul">Contact Me</h1>
           <Contact />
         </section>
       </div>
