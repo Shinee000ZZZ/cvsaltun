@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css';
 import Hero from './components/hero/hero';
 import Edu from './components/education/edu';
@@ -5,11 +8,15 @@ import Skill from './components/skills/skill';
 import Contact from './components/contact/contact';
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="App">
       <nav className="navbar">
         <div className="navbar-logo">ONLINE CV</div>
-        <ul className="navbar-links">
+        <ul className="navbar-links" data-aos="fade-down">
           <li><a href="#home">Home</a></li>
           <li><a href="#edu">Education</a></li>
           <li><a href="#skills">Skills</a></li>
